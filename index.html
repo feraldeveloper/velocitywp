@@ -1,73 +1,126 @@
 <!DOCTYPE html>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17698758133"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-17698758133');
-</script>
-<html>
+<html lang="en">
 <head>
-<title>{ v e l o c i t y }</title>
+  <meta charset="utf-8">
+  <title>aerealis's blog thing</title>
 
-<style>
-body { 
-  background-color: #292b2e;
-}
-.p1 {
-  font-family: "Times New Roman", Times, serif;
-}
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17698758133"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-17698758133');
+  </script>
 
-.p2 {
-  font-family: Helvetica, sans-serif;
-  color: white;
-  font-size: 130%;
-}
-.h1 {
-  font-family: Helvetica, sans-serif;
-  color: white;
-}
-.bigger {
-  font-size: 167%;
-}
-.smaller {
-  font-size: 25%;
-}
+  <style>
+    body {
+      background-color: #000000;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      height: 100vh;
+    }
 
-.p3 {
-  font-family: "Lucida Console", "Courier New", monospace;
-}
-</style>
+    .header-images {
+      position: fixed;
+      top: 0;
+      left: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      padding: 8px;
+      z-index: 1000;
+    }
+
+    .header-images img {
+      height: 120px;
+      width: auto;
+      display: block;
+    }
+
+    .text-box {
+      background-color: rgb(61, 64, 68);
+      width: 820px;
+      height: 3000px;
+      margin-top: 20px;
+      padding: 16px;
+      box-sizing: border-box;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 16px;
+    }
+
+    .p2 {
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: 130%;
+      color: rgb(255, 255, 255);
+      margin: 0;
+      width: 90%;
+      text-align: left;
+    }
+
+    .bigger {
+      font-size: 150%;
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    .velocity-link {
+      text-decoration: none;
+      color: rgb(112, 176, 255);
+      cursor: pointer;
+    }
+
+    .velocity-link:hover {
+      color : rgb(112, 176, 255);
+      text-decoration: underline;
+    }
+  </style>
 </head>
+
 <body>
 
-<h1 class="h1">HI!!! HELLO HI!!!!</h1>
-<img src="hi.gif" alt="Computer man" style="width:400px;height:400px;">
-<img src="hi.gif" alt="Computer man" style="width:400px;height:400px;">
-<img src="hi.gif" alt="Computer man" style="width:400px;height:400px;">
-<img src="hi.gif" alt="Computer man" style="width:400px;height:400px;">
+  <!-- fixed images in top-left -->
+  <div class="header-images">
+    <a href="https://store.steampowered.com/app/3426780/_v_e_l_o_c_i_t_y/" target="_blank" rel="noopener noreferrer">
+      <img src="header.jpg" alt="{ v e l o c i t y } on Steam">
+    </a>
 
-<p class="p2">HELLO!!! I LOVE YOU!!! I MADE A GAME FOR YOU!!! IT'S A PUZZLE GAME ABOUT GOING REALLY FAST!!! <br>
+    <a href="https://aeneasappimage.itch.io/suburbia-infinitum" target="_blank" rel="noopener noreferrer">
+      <img src="header2.jpg" alt="Suburbia Infinitum on itch.io">
+    </a>
+  </div>
 
-    <br>THERES TWO CAMPAIGNS WITH TWO <span class="bigger">ENTIRELY DIFFERENT ARSENALS</span> AND ITS REALLY COOL AND YOU SHOULD BUY IT!!!
-    <br>
-    <br>ITS ONLY 3 DOLLARS ON STEAM!!! PLEASE BUY IT FOR ME!!! 
-    <br>I WORKED REALLY HARD ON IT!!! THANK YOU SO MUCH FOR YOUR SUPPORT!!! YOU ARE THE BEST!!! HAVE A GREAT DAY!!! I LOVE YOU MWAH
-</p>
+  <div class="text-box">
+    <h1 class="p2 center">Home</h1>
 
+    <p class="p2 center">
+      hello. im aerealis
+    </p>
 
-<button type="image" src="buy.png" onclick="window.location.href='https://store.steampowered.com/app/3426780/_v_e_l_o_c_i_t_y/'">
-    <img src="buy.png" alt="Buy">
+    <p class="p2">
+      hi! im aerealis, a solo indie dev.
+    </p>
 
-</button>
-<br>
-<button type="image" src="no.png" >
-    <img src="no.png" alt="No Buy" style="width:200px;height:100px;">
-</button>
+    <p class="p2">
+      i do c#, gamedev in unity, and music. also, as you can see from the sheer beauty of this website, graphic design is my passion.
+    </p>
 
+    <p class="p2">
+      i’ve released a couple of games on steam. you can check them out in the top left corner.
+    </p>
+
+    <a href="velocity.html" class="p2 center velocity-link">
+      { v e l o c i t y } retrospective
+    </a>
+  </div>
 
 </body>
-</html>
 </html>

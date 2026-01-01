@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{ v e l o c i t y } retrospective</title>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17698758133"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-17698758133');
+  </script>
+
+  <style>
+    body {
+      background-color: #000000;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      height: 100vh;
+    }
+
+    .header-images {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column; 
+  gap: 12px;              
+  padding: 8px;
+  z-index: 1000;
+}
+
+
+    .header-images img {
+      height: 120px;
+      width: auto;
+      display: block;
+    }
+
+    .text-box {
+      background-color: rgb(61, 64, 68);
+      width: 820px;
+      height: 3000px;
+      margin-top: 20px;
+      padding: 16px;
+      box-sizing: border-box;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 16px; /* vertical spacing between lines */
+    }
+
+    .p2 {
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: 130%;
+      color: rgb(255, 255, 255);
+      margin: 0;
+      width: 90%;
+      text-align: left;
+    }
+    .bigger {
+      font-size: 150%;
+    }
+    .center {
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- fixed images in top-left -->
+  <div class="header-images">
+  <a href="https://store.steampowered.com/app/3426780/_v_e_l_o_c_i_t_y/" target="_blank" rel="noopener noreferrer">
+    <img src="header.jpg" alt="{ v e l o c i t y } on Steam">
+  </a>
+
+  <a href="https://aeneasappimage.itch.io/suburbia-infinitum" target="_blank" rel="noopener noreferrer">
+    <img src="header2.jpg" alt="Suburbia Infinitum on itch.io">
+  </a>
+</div>
+
+
+  <div class="text-box">
+
+    <h1 class="p2 center bigger">{ v e l o c i t y }</h1><br>
+    <h1 class="p2 center">Overview</h1><br>
+    <p class="p2">{ v e l o c i t y } is a fast-paced first-person puzzle game abount movement, and, you guessed it, velocity.</p>
+    <p class="p2">i was the sole developer of this game except for a small few contribuitions from xeight, who you can find on https://xeight.straw.page/. i did all the programming, level design, music, and graphic design myself. i think this shows in some unfortunate ways, such as the pacing, and unintuitiveness of the game at some points, but there were also quite a few interesting obstacles to overcome.</p>
+     <p class="p2">the game revolves around movement, and devices you get along the game. first, let's go over the movement.</p>
+     <p class="p2">moving midair makes you move absurdly fast. there's absolutely no movement, no air resistance, and rather than your base movement force being slowed down midair, its actually multiplied by 1.2. this sounds really unbalanced, which it is, but it's also really fun.
+      by pressing shift on the ground, you can dash in the direction you're moving, which will expend a decent chunk of your stamina. your dash velocity clears very quickly on ground, but if you jump while you still have dash velocity, you will retain that velocity midair, allowing for some really fun and fast movement. rather than jumping, you can also
+      choose to slide, which will conserve your horizontal velocity <b>NO MATTER WHAT</b>, allowing for some really crazy speed builds. <br><br>
+
+      the real meat of the game, however, is the devices you get along the way. there are five devices in total, each with their own unique function.</p>
+    <p class="p2">the first device allows you to save and load velocity. by pressing right click, you save your current velocity, and by pressing left click, you load that velocity back onto yourself. you can also press left alt to add your current velocity to your saved velocity, letting you build up more and more speed.
+      this can be comboed with sliding, letting you add your current speed to your saved speed <i>without losing any of it</i>, allowing you to build up speed only limited by your own click speed.
+
+      <br><br>the second device lets you push and pull objects. pretty straightforward, you can use this to move boxes onto buttons, or fling objects at high speeds to aim them at pressure plates.
+      <br><br>the third device lets you swap velocities with objects. by aiming at an object and left clicking, you swap your velocity with that object's velocity. you can combo this with the second device to fling objects at high speeds, then swap velocities with them to launch yourself at high speeds.
+      <br><br>the fourth device lets you teleport. by right clicking, you place a teleportation marker at your current location, and by left clicking, you teleport to that marker. not too much to say about this one, its pretty straightforward.
+      <br><br>the fifth and final device lets you redirect your velocity. by aiming in a direction and left clicking, your current velocity is redirected to that direction, while maintaining its magnitude. this lets you do some really cool maneuvers, like launching yourself upwards after building up speed. while flying, you can also right click to pulse your velocity in the direction you're looking.
+     </p>
+    <h1 class="p2 center">Game design faults</h1><br>
+     <p class="p2">a consequence of the main mechanic of the game being saving and loading velocity is that you can gather a theoretically infinite amount of velocity in any given direction, meaning the player has <b>full control over their position in space at any time.</b> this makes the introduction of any mechanic whatsoever so hard to matter whatsoever. its so easy to have a mechanic bring up a question like "why is there a launchpad here? i can just dash and go beyond that speed myself." or "why would i do some intricate cool feeling move when i could just get that speed myself way easier?" <br>most of the time i cant answer that, so the cool mechanic ends up scrapped or completely remade. my biggest regret in the latest iteration of the game is the fifth device, which is redirecting velocity to the direction that you look in. i feel like it completely destroys any possible use for saving velocity in the lategame, because it does everything the first device does <b>and more.</b></b></p>
+    
+    <p class="p2">i think the best way to represent this is through these two diagrams.</p>
+    <img src="good.png" alt="diagram 1" style="width:90%;"><br>
+    <p class="p2">in this diagram, you can see all devices doing their own thing. awesome! saving and loading velocity (device 1) has some overlap with teleporting (device 4), that overlap being the way they modify the players position, and device 2 and 3 overlapping by modifying other objects' positions. </p>
+    <img src="bad.png" alt="diagram 2" style="width:90%;"><br>
+    <p class="p2">and then device 5 comes around and fffffffffucks device 1 over and completely replaces it. there isnt a single thing device 1 can do better than 5.</p>
+    <br>
+    <p class="p2">i think there is still a lot of good in { v e l o c i t y }, but the ending is fundamentally flawed in a way i honestly dont know how to fix.</p>
+    <p class="p2">the music is a decently solid axis of the game, in my belief.</p>
+    <h1 class="p2 center">Music</h1><br>
+    <p class="p2">song name: WHAT</p>
+    <audio controls>
+      <source src="what.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <p class="p2">im sorry i like fast paced dnb okay its FUN and i needed something intense for the final level</p><br>
+    <p class="p2">song name: what?</p>
+    <audio controls>
+      <source src="whatchill.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <p class="p2">yeah this is just a chiller version of what so what huh what are you gonna do about it</p>
+    <br><p class="p2">song name: HIVEMIND INC. PRESENTS...</p>
+    <audio controls>
+      <source src="HIVEMIND INC. PRESENTS....wav" type="audio/wav">
+      Your browser does not support the audio element.
+    </audio>
+    <p class="p2">this was the original final song, but i liked it better as the boss before the end. didnt feel fast enough to be the end, but its also just fun </p>
+    <br><p class="p2">this song is untitled. in the game its just called "tense.mp3" and i couldnt be bothered to name it</p>
+    <audio controls>
+      <source src="tense.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <p class="p2">this was actually made for SUBURBIA INFINITUM, (and it still is) but i felt like it fit chamber 7 pretty well so i lightly modified it and now its this. <br><br> theres some stolen toby fox motifs in there. i also (tried) to use the neverending night motif in SUBURBIA INFINITUM and it sounds nothing like it but its fine</p>
+  </div>
+
+</body>
+</html>
